@@ -8,13 +8,13 @@ I used a lot of AI in this, but i do actually know how to code in C++, at a leve
 i could've coded it by hand, but it's obviously much slower and harder.
 
 How does the language work?
-The .az source files get transipled into real C++ by az-transipler.exe
+The .az source files get transpiled into real C++ by az-transpiler.exe
 (which was by the way also made in c++), then you just use a normal c++
 compiler like g++ on the transpiled file.
 With multiple files:
 in Az, you always only trasnpile 1 file, that file CAN include others with
 the keyword using, it's a mix of python and c++, but more similar to python
-The transipler checks for all functions inside the included additional .az files,
+The transpiler checks for all functions inside the included additional .az files,
 and allows the main file that's getting transpiled to use them. So it's basically
 like a c++ .h file, other .az files can have functions. the main can also include
 just one function from a file like this:
@@ -29,14 +29,13 @@ Version 2 will introduce OOP, deeper memory manipulating (pointers and reference
 etc.
 
 What about the syntax?
-Here's a bit of code:
-main.az
-```
+Here's a bit of code: (for example main.az):
+
 using console;
 using math;
 //built-in libraries^
 
-func sayName(): none //none is a keyword like None in python. After the : is the return value specified
+func sayName(): none //none is a keyword like None in python. After the : is the return type specified
 {
     console.print(fstring("Your name is {name}")); //name can be used here since it was declared as global
 }
@@ -58,7 +57,7 @@ main() //different function syntax for main, this starts by itself
     const global string name = input(string);
     sayName();
 
-    temp list<var> idk = ["Something", "Somehtingelse"]; //var is a keyword for auto detecting the type
+    temp list<var> idk = ["Something", "Somethingelse"]; //var is a keyword for auto detecting the type
     temp dict<var, var> something = {"Unc": 'U', "Idk": 'I'};
     for var smth : idk { //C++ like iterating through an array
         console.write(smth);
@@ -71,7 +70,7 @@ main() //different function syntax for main, this starts by itself
         else {isDone = false;}
     }
 }
-```
+//end of code
 
 There are also more built in libraries including time, file I/O and more.
 I made this language because i love C++, but some things are just hard to do and this has them built in, and also
