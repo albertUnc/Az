@@ -1,0 +1,19 @@
+Human notes of these ai-instructions:
+
+These are the .md files i spent a few days on making (using AI)
+
+What these were used for: This is all context that the AI API i used
+to make the actual code and everything set up and working, this is 98% of the input
+
+These contain a lot of stuff in detail, feel free to read through them, they are all
+100% human understandable and a very good resource for learning.
+They are also all 100% accurate since the whole language's code is written based off these 
+
+Though, if you want human-made  resources, you can check out the documentations folder,
+those have the documentation of all the functions and the whole language that was written by
+me, 100% human written.
+
+If you have any questions or want to report bugs, contact me:
+Discord: albertunc
+(I used AI to make this but i do actually know how to code and i spent MANY huors
+on the AI part too, it's not slop like most random vibecoded things)
