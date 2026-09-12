@@ -138,6 +138,7 @@ console.write("Hello world!\n");
 
 func exampleVoid(int value, bool print): none
 {
+    //These 2 do the exact same
     if print {console.write(value + "\n");}
     if print {console.write(fstring("{value}\n"));}
 }
